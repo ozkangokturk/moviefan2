@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "movie",
+            "otherEntityName": "movie",
+            "relationshipType": "many-to-many",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "genre"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180511130307",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "genre",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}
